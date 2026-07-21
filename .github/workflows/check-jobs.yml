@@ -1,0 +1,88 @@
+name: Check Adventist Health Oregon RN jobs
+
+on:
+  schedule:
+    - cron: "3-58/5 * * * *"
+  workflow_dispatch:
+    inputs:
+      send_test_alert:
+        description: Send one current role as a simulated new-role alert
+        required: false
+        default: false
+        type: boolean
+
+permissions:
+  contents: write
+  issues: write
+
+concurrency:
+  group: adventist-oregon-rn-monitor
+  cancel-in-progress: false
+
+jobs:
+  check-jobs:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v7
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v7
+        with:
+          node-version: 24
+          package-manager-cache: false
+
+      - name: Check Adventist Health jobs
+        id: monitor
+        env:
+          SEND_TEST_ALERT: ${{ inputs.send_test_alert || 'false' }}
+        run: |
+          extra_args=""
+          if [ "$SEND_TEST_ALERT" = "true" ]; then
+            extra_args="--send-test-alert"
+          fi
+          node scripts/check-jobs.mjs \
+            --state data/seen_jobs.json \
+            --alert-file "$RUNNER_TEMP/new_jobs.md" \
+            --new-jobs-file "$RUNNER_TEMP/new_jobs.json" \
+            --readme README.md \
+            $extra_args
+
+      - name: Create email-triggering GitHub issue
+        if: steps.monitor.outputs.new_count != '0'
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: >-
+          node scripts/create-issue.mjs
+          "$RUNNER_TEMP/new_jobs.md"
+          "${{ steps.monitor.outputs.new_count }}"
+
+      - name: Send Discord notification
+        if: steps.monitor.outputs.new_count != '0'
+        continue-on-error: true
+        env:
+          DISCORD_WEBHOOK_URL: ${{ secrets.DISCORD_WEBHOOK_URL }}
+        run: node scripts/send-discord.mjs new "$RUNNER_TEMP/new_jobs.json"
+
+      - name: Save current listings and seen job IDs
+        if: steps.monitor.outputs.repo_changed == 'true'
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add data/seen_jobs.json README.md
+          if git diff --cached --quiet; then
+            exit 0
+          fi
+          git commit -m "chore: update Adventist Health job listings [skip ci]"
+          git push
+
+      - name: Add run summary
+        if: always()
+        env:
+          CURRENT_COUNT: ${{ steps.monitor.outputs.current_count }}
+          NEW_COUNT: ${{ steps.monitor.outputs.new_count }}
+        run: |
+          echo "## Adventist Health Oregon RN monitor" >> "$GITHUB_STEP_SUMMARY"
+          echo "Current matching jobs: ${CURRENT_COUNT:-unknown}" >> "$GITHUB_STEP_SUMMARY"
+          echo "New jobs: ${NEW_COUNT:-unknown}" >> "$GITHUB_STEP_SUMMARY"
