@@ -53,8 +53,15 @@ export function buildDailyDigestPayloads(jobs) {
   if (jobs.length === 0) {
     return [
       {
-        content:
-          "# Current Adventist Health Oregon New-Grad RN Roles\nNo matching openings are currently listed.",
+        content: "# Current Adventist Health Oregon New-Grad RN Roles",
+        embeds: [
+          {
+            title: "No roles available :( Come back tomorrow",
+            description: "No matching openings are currently listed.",
+            color: DAILY_DIGEST_COLOR,
+            footer: { text: "Adventist Health Oregon RN Job Monitor" },
+          },
+        ],
         allowed_mentions: { parse: [] },
       },
     ];
