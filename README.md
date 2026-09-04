@@ -5,10 +5,11 @@
 ## Current openings
 
 <!-- ADVENTIST-JOBS:START -->
-**2 current openings**
+**3 current openings**
 
 | Position | Facility | Location | Posted | Matched search | Requisition |
 | --- | --- | --- | --- | --- | --- |
+| [RN, House Supervisor (AHCG)](https://ecvz.fa.us2.oraclecloud.com/hcmUI/CandidateExperience/en/sites/CX_1/job/71984) | Adventist Health Columbia Gorge | The Dalles, OR, United States | 2026-09-04 | RN New Grad | 71984 |
 | [RN, Clinical Educator, Perioperative Services, Full Time, Day Shift](https://ecvz.fa.us2.oraclecloud.com/hcmUI/CandidateExperience/en/sites/CX_1/job/66682) | Adventist Health Portland | Portland, OR, United States | 2026-07-24 | RN New Grad | 66682 |
 | [RN, Nurse Lead, Emergency Department, Full-time, Night Shift](https://ecvz.fa.us2.oraclecloud.com/hcmUI/CandidateExperience/en/sites/CX_1/job/69037) | Adventist Health Portland | Portland, OR, United States | 2026-07-16 | RN New Grad | 69037 |
 
