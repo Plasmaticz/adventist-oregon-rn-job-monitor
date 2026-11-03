@@ -5,14 +5,13 @@
 ## Current openings
 
 <!-- ADVENTIST-JOBS:START -->
-**5 current openings**
+**4 current openings**
 
 | Position | Facility | Location | Posted | Matched search | Requisition |
 | --- | --- | --- | --- | --- | --- |
 | [RN Residency Spring 2027 Cohort - ED & FBC](https://ecvz.fa.us2.oraclecloud.com/hcmUI/CandidateExperience/en/sites/CX_1/job/73804) | Adventist Health Portland | Portland, OR, United States | 2026-10-30 | RN Resident, RN New Grad, RN Residency | 73804 |
 | [RN Residency Spring 2027 Cohort - Med/Surg & Tele](https://ecvz.fa.us2.oraclecloud.com/hcmUI/CandidateExperience/en/sites/CX_1/job/73803) | Adventist Health Portland | Portland, OR, United States | 2026-10-30 | RN Resident, RN New Grad, RN Residency | 73803 |
 | [RN, House Supervisor, Part-time, Night Shift](https://ecvz.fa.us2.oraclecloud.com/hcmUI/CandidateExperience/en/sites/CX_1/job/73885) | Adventist Health Portland | Portland, OR, United States | 2026-10-22 | RN New Grad | 73885 |
-| [RN, Clinical Educator, Perioperative Services, Full Time, Day Shift](https://ecvz.fa.us2.oraclecloud.com/hcmUI/CandidateExperience/en/sites/CX_1/job/66682) | Adventist Health Portland | Portland, OR, United States | 2026-07-24 | RN New Grad | 66682 |
 | [RN, Nurse Lead, Emergency Department, Full-time, Night Shift](https://ecvz.fa.us2.oraclecloud.com/hcmUI/CandidateExperience/en/sites/CX_1/job/69037) | Adventist Health Portland | Portland, OR, United States | 2026-07-16 | RN New Grad | 69037 |
 
 [RN Resident](https://ecvz.fa.us2.oraclecloud.com/hcmUI/CandidateExperience/en/sites/CX_1/jobs?keyword=RN+Resident&lastSelectedFacet=ORGANIZATIONS&mode=job-location&selectedOrganizationsFacet=300000009236546%3B300001042821913) | [RN New Grad](https://ecvz.fa.us2.oraclecloud.com/hcmUI/CandidateExperience/en/sites/CX_1/jobs?keyword=RN+New+Grad&lastSelectedFacet=ORGANIZATIONS&mode=job-location&selectedOrganizationsFacet=300000009236546%3B300001042821913) | [RN Residency](https://ecvz.fa.us2.oraclecloud.com/hcmUI/CandidateExperience/en/sites/CX_1/jobs?keyword=RN+Residency&lastSelectedFacet=ORGANIZATIONS&mode=job-location&selectedOrganizationsFacet=300000009236546%3B300001042821913)
