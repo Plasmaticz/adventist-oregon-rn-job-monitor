@@ -5,10 +5,11 @@
 ## Current openings
 
 <!-- ADVENTIST-JOBS:START -->
-**2 current openings**
+**3 current openings**
 
 | Position | Facility | Location | Posted | Matched search | Requisition |
 | --- | --- | --- | --- | --- | --- |
+| [RN, Nurse Lead, Full Time, Day Shift](https://ecvz.fa.us2.oraclecloud.com/hcmUI/CandidateExperience/en/sites/CX_1/job/74400) | Adventist Health Portland | Portland, OR, United States | 2026-11-10 | RN New Grad | 74400 |
 | [RN, House Supervisor, Part-time, Night Shift](https://ecvz.fa.us2.oraclecloud.com/hcmUI/CandidateExperience/en/sites/CX_1/job/73885) | Adventist Health Portland | Portland, OR, United States | 2026-10-22 | RN New Grad | 73885 |
 | [RN, Nurse Lead, Emergency Department, Full-time, Night Shift](https://ecvz.fa.us2.oraclecloud.com/hcmUI/CandidateExperience/en/sites/CX_1/job/69037) | Adventist Health Portland | Portland, OR, United States | 2026-07-16 | RN New Grad | 69037 |
 
